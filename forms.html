@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="formsdecore.css">
+        <title>
+            facility booking form
+        </title>
+    </head>
+    <body>
+        <h1> Form from facility booking</h1>
+            <form action="post">
+                <div>
+                    <label for="username"> Name:</label>
+                    <input type="text" name="username" placeholder="Enter your name" id="username" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="wing">Wing:  </label>
+                    <input type="text" name="wing" id="wing" required>
+                    <label for="roomno.">RoomNo:</label>
+                    <input type="number" name="roomno" id="roomno" required>
+                </div>
+                <br> <br>
+                <div>
+                    <label for="Details">Facility Details</label>
+                    <select name="facility" id="facility">
+                        <option value="">--Select--</option>
+                        <option value="clubhouse">Clubhouse</option>
+                        <option value="terrace">Terrace</option>
+                        <option value="Premises">Premises</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <label for="info">Reason you want the facility:</label><br>
+                    <textarea name="info" id="info"></textarea>
+                </div>
+                <br><br>
+                <div>
+                    <label for="fromdate">From:</label>
+                    <input type="date">
+                    <label for="todate">To:</label>
+                    <input type="date">
+                </div>
+                <br><br>
+                <div>
+                     here i accept to all the terms and conditoins <input type="checkbox" id="terms" required>
+                </div>
+                <br><br>
+                <button type="submit"></button>
+            </form>
+    </body>
+</html>
